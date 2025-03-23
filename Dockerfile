@@ -1,3 +1,7 @@
+cd
+FROM nginx:1.24-alpine
+COPY . /usr/share/nginx/html
+
 # Use a lightweight Node.js base image
 FROM node:18-alpine
 
@@ -15,3 +19,4 @@ EXPOSE 3000
 
 # Start the app
 CMD ["npm", "start"]
+main
